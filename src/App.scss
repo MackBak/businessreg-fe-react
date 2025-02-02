@@ -1,0 +1,38 @@
+// App.scss / Global Styles
+
+// Global Colours
+$color-tomato: #F06449;
+$color-isabelline: #EDE6E3; // Text colour
+$color-platinum: #DADAD9;
+$color-black-olive: #36382F; // Background for pages
+$color-vivid-sky-blue: #5BC3EB;
+
+// Extra colours if needed
+$color-goldenrod: #DAA520; // Or a muted version
+$color-sage-green: #A7C4BC;
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-color: $color-black-olive;
+}
+
+button {
+  background-color: $color-tomato;
+  border-width: thin;
+  border-style: groove;
+  border-color: $color-sage-green;
+
+  &:hover {
+    background-color: $color-vivid-sky-blue;
+  }
+
+  &:active {
+    background-color: $color-goldenrod;
+  }
+}
