@@ -3,6 +3,7 @@
 import {useLogin} from "../../hooks/useLogin.ts";
 import {useNavigate} from "react-router-dom";
 import {LoginForm} from "./LoginForm.tsx";
+import {loginResponse} from "../../types/auth.types.ts";
 
 
 export const Login = () => {
@@ -10,7 +11,7 @@ export const Login = () => {
     const navigate = useNavigate();
 
     /* eslint-disable */
-    const handleSuccessfulLogin = (data: any) => {
+    const handleSuccessfulLogin = (data: loginResponse) => {
         console.log('Login succesful with data: ', data) // TEST
         navigate('/');
     };
