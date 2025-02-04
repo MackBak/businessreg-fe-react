@@ -24,9 +24,7 @@ export const Login = () => {
                     try {
                         const data = await handleLogin(username, password);
                         handleSuccessfulLogin(data);
-                    } catch {
-                        // ESLint tells me to add a Catch here. Why? It's already handled in useLogin ?
-                    }
+                    } catch {} // ESLint tells me to add a Catch here. Why? It's already handled in useLogin ?
                 }}
                 isLoading={isLoading}
                 error={error}
