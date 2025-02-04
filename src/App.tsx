@@ -1,8 +1,10 @@
-import Home from "./components/Home/Home";
+// App.tsx
+
+import Home from "./components/home/Home";
 import './App.scss';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
-import Register from "./components/Register/Register";
-import Login from "./components/Login/Login";
+import Register from "./components/register/Register";
+import Login from "./components/login/Login";
 
 function App() {
     return (

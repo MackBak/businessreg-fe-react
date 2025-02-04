@@ -25,8 +25,8 @@ function Home() {
         <h1>Home Page</h1>
             <button onClick={handleRegisterCLick}>Register</button>
             <button onClick={(handleLoginCLick)}>Login</button>
-            <button onClick={() => console.log('## Register Business clicked ##')}>Register Business</button>
-            <button onClick={() => console.log('## Business Types clicked ##')}>Business Types</button>
+            <button onClick={(handleBusinessRegister)}>Register Business</button>
+            <button onClick={(handleBusinessTypes)}>Business Types</button>
         </>
     );
 }
