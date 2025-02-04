@@ -2,13 +2,16 @@
 
 import {useLogin} from "../../hooks/useLogin.ts";
 import {LoginForm} from "./LoginForm";
+import {useNavigate} from "react-router-dom";
+
 
 export const Login = () => {
     const {handleLogin, isLoading, error} = useLogin();
+    const navigate = useNavigate();
 
     const handleSuccessfulLogin = (data: any) => {
         console.log('Login succesful with data: ', data) // TEST
-        // TODO: ADD REDIRECT!!
+        navigate('/');
     };
 
     return (
