@@ -29,7 +29,7 @@ export const LoginForm = ({onSubmit, error, isLoading}: LoginFormProps) => {
                    onChange={(e) => setPassword(e.target.value)} required/>
             <br/>
 
-        {/*    MAYBE SOME ERROR DISPLAY HERE?*/}
+            {error && <p>{error}</p>}
 
             <button type="submit" disabled={isLoading}>{isLoading ? 'Logging in..' : 'Login'}</button> //
         </form> // Think this above sets button depending on isLoading if alse or true.

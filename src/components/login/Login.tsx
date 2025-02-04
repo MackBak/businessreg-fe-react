@@ -1,14 +1,15 @@
 // Login.tsx
 
 import {useLogin} from "../../hooks/useLogin.ts";
-import {LoginForm} from "./LoginForm";
 import {useNavigate} from "react-router-dom";
+import {LoginForm} from "./LoginForm.tsx"; //TODO: Check why I get an  error here? Makes no sense.
 
 
 export const Login = () => {
     const {handleLogin, isLoading, error} = useLogin();
     const navigate = useNavigate();
 
+    /* eslint-disable */
     const handleSuccessfulLogin = (data: any) => {
         console.log('Login succesful with data: ', data) // TEST
         navigate('/');
@@ -33,4 +34,5 @@ export const Login = () => {
         </div>
     );
 };
+
 export default Login;
